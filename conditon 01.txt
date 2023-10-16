@@ -1,0 +1,237 @@
+﻿Question.1
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x;
+    cout<<"enter the value of x : ";
+    cin>>x;
+    int y;
+    cout<<"enter the value of y : ";
+    cin>>y;
+    if(x>y) {
+        cout<<"x is greatest value";
+    }else {
+        cout<<"y is greatest  value ";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.2
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int radius;
+    cout<<"Enter the radius : ";
+    cin>>radius;
+    float area = 3.14 * radius * radius;
+    float circumference = 2 * 3.14 * radius;
+    if (area > circumference){
+        cout<<"Area is greater than circumference." << endl;
+    }else{
+        cout<<"circumference is greater than area." << endl;
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.3
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int year;
+    cout << "Enter a year: ";
+    cin >> year;
+    if (year % 400 == 0) {
+        cout << year << " is a leap year.";
+    }
+    else if (year % 100 == 0) {
+        cout << year << " is not a leap year.";
+    }
+    else if (year % 4 == 0) {
+        cout << year << " is a leap year.";
+    }
+    else {
+        cout << year << " is not a leap year.";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.4
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int length, width;
+    cout<<"enter the value of length : ";
+    cin>>length;
+    cout<<"enter the value of width : ";
+    cin>>width;
+    int area,perimeter;
+    area=(length*width);
+    perimeter=((length+width)*2);
+    if(area>perimeter){
+        cout<<"area is greater than perimeter";
+    }
+    else{
+        cout<<"perimeter is greater than area";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.5
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x,y,z;  //x,y,z are side of triangle
+    cout<<"enter the value of x : "<<endl;
+    cout<<"enter the value of y : "<<endl;
+    cout<<"enter the value of z : "<<endl;
+    cin>>x>>y>>z;
+    if(x==y && y==z){
+        cout<<"this is equilateral";
+    }
+    else if(x==y || y==z || x==z){
+        cout<<"this is scalene : ";
+    }
+    else{
+        cout<<"this is isosceles : ";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.6
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x,y,z;  //x,y,z are marks of student
+    cout<<"enter the value of x : "<<endl;
+    cout<<"enter the value of y : "<<endl;
+    cout<<"enter the value of z : "<<endl;
+    cin>>x>>y>>z;
+    if(x<=y && x<=z){
+        cout<<"x is least value " ;
+    }
+    else if(y<=x && y<=z){
+        cout<<"y is least value : ";
+    }
+    else{
+        cout<<"z is least value : ";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.7
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    float x,y;
+    cout<<"enter the value of x and y : ";
+    cin>>x>>y;
+    if(x==0 && y==0){
+        cout<<" x-axis y-axis are at the origin";
+    }
+    if(x==0 &&  y != 0){
+        cout<<"Point is at y axis";
+    }
+    if(y==0 &&  x != 0){
+        cout<<"Point is at x axis";
+    }
+    if(y!=0 &&  x!= 0){
+        cout<<"Point is at plane";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.8
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    float x1,y1,x2,y2,x3,y3,slope1,slope2;
+    cout<<"Enter points (x1, y1)" << endl;
+    cin>>x1>>y1;
+    cout<<"Enter points (x2, y2)"<<endl;
+    cin>>x2>>y2;
+    cout<<"Enter points (x3,y3)"<<endl;
+    cin>>x3>>y3;
+    slope1 = (y2 - y1) / (x2 - x1);
+    slope2 = (y3 - y2) / (x3 - x2);
+    if (slope1 == slope2) {
+        cout<<"All 3 points lie on the same line";
+    } else {
+        cout<<"All 3 points do not lie on the same line";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.9
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter character : ";
+    cin>>ch;
+    if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+        cout << ch << " an Alphabet";
+    } else if (ch >= '0' && ch <= '9') {
+        cout << ch << " a Digit";
+    } else {
+        cout << ch << " Special Character";
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question.10
+#include<iostream>
+using namespace std;
+int main() {
+    int a = 500, b, c;
+    if (a >= 400)
+        b = 300;
+    c = 200;
+    cout << "value of b and c are respectively " << b << " and " << c;
+    return 0;
+}
+output: 300 and 200
